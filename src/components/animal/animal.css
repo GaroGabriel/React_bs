@@ -1,0 +1,25 @@
+.animal {
+    max-width: 200px;
+    min-width: 200px;
+    margin: 20px;
+    border: 1px solid rgb(165, 162, 162);
+    border-radius: 5px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgb(88, 88, 88) 2px 2px 10px;
+}
+.animal:hover {
+
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px;
+    cursor: pointer;
+}
+.animal__image img{
+    width: 100%;
+    border-radius: 100%;
+}
+.animal__name{
+    padding: 10px 0;
+    font-size: 20px;
+}

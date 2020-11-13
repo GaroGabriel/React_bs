@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './animal.css'
 
 
 class Animal extends Component {
@@ -11,9 +12,9 @@ class Animal extends Component {
                 <div className='animal__image'>
                     <img src={this.props.img} alt={this.props.name} />
                 </div>
-                <h3 className='animal__name'>
+                <span className='animal__name'>
                     {this.props.name}
-                </h3>
+                </span>
             </div>
         )
     }
