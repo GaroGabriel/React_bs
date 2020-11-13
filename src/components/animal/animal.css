@@ -17,7 +17,7 @@
 }
 .animal__image img{
     width: 100%;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 .animal__name{
     padding: 10px 0;
