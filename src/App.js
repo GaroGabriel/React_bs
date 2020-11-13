@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
+import Animal from './components/animal/animal';
+
 
 const App = () => {
   return (
-    <div className="App">
-      <p>test</p>
+    <div className='body__wrapper'>
+      <Animal />
     </div>
   );
 }
