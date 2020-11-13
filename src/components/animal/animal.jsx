@@ -9,10 +9,10 @@ class Animal extends Component {
         return (
             <div className='animal'>
                 <div className='animal__image'>
-                    <img src="" alt="" />
+                    <img src={this.props.img} alt={this.props.name} />
                 </div>
                 <h3 className='animal__name'>
-
+                    {this.props.name}
                 </h3>
             </div>
         )
