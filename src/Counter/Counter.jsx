@@ -4,6 +4,10 @@ import './counter.css'
 class Counter extends Component {
 
 
+    state = {
+        count: 0,
+    }
+
     render() {
         return (
             <div className='counter__wrapper'>
@@ -12,7 +16,7 @@ class Counter extends Component {
                 </div>
                 <div className='counter'>
                     <button>-</button>
-                    <span>45</span>
+                    <span>{this.state.count}</span>
                     <button>+</button>
                 </div>
             </div>
