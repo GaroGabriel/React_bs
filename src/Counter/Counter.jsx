@@ -6,6 +6,7 @@ class Counter extends Component {
         super()
         this.clickPlus = this.clickPlus.bind(this)
         this.clickMinus = this.clickMinus.bind(this)
+        this.restBtn = this.restBtn.bind(this)
     }
 
     state = {
@@ -23,7 +24,11 @@ class Counter extends Component {
             count: this.state.count + 1
         })
     }
-
+    restBtn = () => {
+        this.setState({
+            count: this.state.count = 0
+        })
+    }
 
     render() {
         return (
@@ -37,7 +42,7 @@ class Counter extends Component {
                     <button onClick={this.clickPlus}>+</button>
                 </div>
                 <div className='counter__rest'>
-                    <button>Rest</button>
+                    <button onClick={this.restBtn}>Rest</button>
                 </div>
             </div>
         )
