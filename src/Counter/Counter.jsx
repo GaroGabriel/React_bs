@@ -36,6 +36,9 @@ class Counter extends Component {
                     <span>{this.state.count}</span>
                     <button onClick={this.clickPlus}>+</button>
                 </div>
+                <div className='counter__rest'>
+                    <button>Rest</button>
+                </div>
             </div>
         )
     }
