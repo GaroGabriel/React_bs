@@ -15,9 +15,19 @@ class Counter extends Component {
 
 
     clickMinus = () => {
-        this.setState({
-            count: this.state.count - 1
-        })
+
+        if (this.state.count == 0) {
+            this.setState({
+                count: this.state.count = 0
+            })
+        } else {
+            this.setState({
+                count: this.state.count - 1
+            })
+        }
+
+
+
     }
     clickPlus = () => {
         this.setState({
