@@ -55,3 +55,12 @@
     margin-top: -80px;
     font-family: 'Righteous', cursive;
 }
+
+.counter .disable{
+    opacity: 0;
+    border: none;
+    cursor: auto;
+}
+.counter .disable:hover{
+    opacity: 0;
+}

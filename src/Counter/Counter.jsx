@@ -47,7 +47,7 @@ class Counter extends Component {
                     <span>Counter</span>
                 </div>
                 <div className='counter'>
-                    <button onClick={this.clickMinus}>-</button>
+                    <button onClick={this.clickMinus} className={this.state.count == 0 ? 'disable' : ''}>-</button>
                     <span>{this.state.count}</span>
                     <button onClick={this.clickPlus}>+</button>
                 </div>
